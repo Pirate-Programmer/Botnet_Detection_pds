@@ -14,11 +14,12 @@ from imblearn.over_sampling import SMOTE
 
 # ------------------ Load Flow-Level Dataset ------------------
 df = pd.read_csv(r"C:\Users\Skeletron\Desktop\dataset\full_dataset.csv")
-
+print("Dataset Loaded")
 X = df.drop(columns=['flow_id', 'ip_src', 'ip_dst', 'is_malicious'])
 y = df['is_malicious']
 
 # ------------------ Split into Train/Test ------------------
+print("s")
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.3, stratify=y, random_state=42
 )
@@ -73,7 +74,7 @@ for model_name, model in models.items():
         "Test Time (s)": test_time
     })
 
-    # Optional: Plot Confusion Matrix
+    #Plot Confusion Matrix
     ConfusionMatrixDisplay.from_predictions(y_test, y_pred, display_labels=["Normal", "Botnet"])
     plt.title(f"Confusion Matrix: {model_name}")
     plt.tight_layout()
