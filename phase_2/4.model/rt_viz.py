@@ -22,7 +22,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.3, stratify=y, random_state=42
 )
 
-# ------------------ Apply SMOTE ------------------
+# ------------------ Apply SMOTE ------------------ 
 print("Applying SMOTE balancing...")
 sm = SMOTE(random_state=42)
 X_train_bal, y_train_bal = sm.fit_resample(X_train, y_train)
