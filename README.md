@@ -113,6 +113,10 @@ References
 ISOT Dataset:
 https://onlineacademiccommunity.uvic.ca/isot/2022/11/27/botnet-and-ransomware-detection-datasets/
 
+Papers:
+<a href="https://sci-hub.se/10.1109/ICCNC.2014.6785439">Exploring Dataset Manipulation via Machine Learning for Botnet Traffic </a>
+<a href="[https://sci-hub.se/10.1109/ICCNC.2014.6785439](https://sci-hub.se/10.1109/ICCNC.2014.6785439)">An efficient flow-based botnet detection using supervised machine learning </a>
+
 
 
 
