@@ -101,7 +101,6 @@ Install dependencies:
 - tshark (CLI)
 ```
 
-References: 
 References
 1) Stevanovic & Pedersen (2014): "An Efficient Flow-based Botnet Detection Using Supervised Machine Learning"
       Introduced minimal packet analysis for flow classification.
