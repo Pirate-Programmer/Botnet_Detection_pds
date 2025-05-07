@@ -15,7 +15,7 @@ def process_file(path):
     # Unified ports
     df['src_port'] = df['tcp.srcport'].replace(0, np.nan).fillna(df['udp.srcport'])
     df['dst_port'] = df['tcp.dstport'].replace(0, np.nan).fillna(df['udp.dstport'])
-
+    
     # Flow ID
     df['flow_id'] = (
         df['ip.src'].astype(str) + "-" +

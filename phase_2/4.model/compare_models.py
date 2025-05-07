@@ -19,7 +19,7 @@ X = df.drop(columns=['flow_id', 'ip_src', 'ip_dst', 'is_malicious'])
 y = df['is_malicious']
 
 # ------------------ Split into Train/Test ------------------
-print("s")
+
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.3, stratify=y, random_state=42
 )
@@ -42,7 +42,7 @@ results = []
 
 # ------------------ Train and Test Each Model ------------------
 for model_name, model in models.items():
-    print(f"\n🚀 Training {model_name}...")
+    print(f"\n Training {model_name}...")
 
     # Measure CPU time for training
     start_train = time.time()

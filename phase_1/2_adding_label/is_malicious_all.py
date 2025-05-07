@@ -7,7 +7,7 @@ MALICIOUS_IPS = {
     '172.16.0.12', '172.16.2.12'
 }
 
-# Folder containing your CSV files
+
 INPUT_FOLDER = r"C:\Users\eletSkron\Desktop\dataset"
 
 for filename in os.listdir(INPUT_FOLDER):
